@@ -49,6 +49,7 @@ import java.util.concurrent.Executor;
  */
 public final class ImageLoaderConfiguration {
 
+	//常见的Resources类型，用来加载drawable图片
 	final Resources resources;
 
 	final int maxImageWidthForMemoryCache;
