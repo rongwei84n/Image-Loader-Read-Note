@@ -33,6 +33,12 @@ artifacts {
     archives sourcesJar
 }
 
+sourceSets {
+    main {
+        java.srcDirs = ['src/main/java', 'src/main/java']
+    }
+}
+
 // Build a jar file in addition to the default aar file
 android.libraryVariants.all { variant ->
     def name = variant.buildType.name

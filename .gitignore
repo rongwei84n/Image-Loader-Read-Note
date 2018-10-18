@@ -1,4 +1,6 @@
 build
+library/library.iml
 .gradle/
 .idea/
 Image-Loader-Read-Note.iml
+app/app.iml
