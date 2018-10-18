@@ -18,6 +18,8 @@ package com.nostra13.universalimageloader.core;
 import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
+import android.util.Log;
+
 import com.nostra13.universalimageloader.cache.disc.DiskCache;
 import com.nostra13.universalimageloader.cache.disc.naming.FileNameGenerator;
 import com.nostra13.universalimageloader.cache.memory.MemoryCache;
@@ -49,6 +51,7 @@ import java.util.concurrent.Executor;
  */
 public final class ImageLoaderConfiguration {
 
+	//常见的Resources类型，用来加载drawable图片
 	final Resources resources;
 
 	final int maxImageWidthForMemoryCache;
@@ -573,6 +576,7 @@ public final class ImageLoaderConfiguration {
 			} else {
 				customExecutorForCachedImages = true;
 			}
+			Log.d("sandy", "init diskCache: " + diskCache);
 			if (diskCache == null) {
 				if (diskCacheFileNameGenerator == null) {
 					diskCacheFileNameGenerator = DefaultConfigurationFactory.createFileNameGenerator();

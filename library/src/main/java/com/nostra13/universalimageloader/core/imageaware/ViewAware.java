@@ -40,7 +40,7 @@ public abstract class ViewAware implements ImageAware {
 	protected Reference<View> viewRef;
 	protected boolean checkActualViewSize;
 
-	/**
+	/**viewRef
 	 * Constructor. <br />
 	 * References {@link #ViewAware(android.view.View, boolean) ImageViewAware(imageView, true)}.
 	 *
